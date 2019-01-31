@@ -1,0 +1,95 @@
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "keyword-spacing":              ["error", {"before": true, "after":  true}],
+    "space-before-function-paren":  ["error", {
+      "anonymous":  "always",
+      "named":      "never",
+      "asyncArrow": "always"
+    }],
+    "max-statements-per-line":      ["warn", {
+      "max": 1
+    }],
+    "comma-spacing":                 ["error", {
+      "after": true
+    }],
+    "semi":                         ["error", "always"],
+    "object-curly-newline":         ["error", "always"],
+    "space-before-blocks":          ["error", "always"],
+    "semi-style":                   ["error", "last"],
+    "multiline-ternary":            ["error", "never"],
+    "space-in-parens":              ["error", "never"],
+    "max-len":                      ["error", 120],
+    "complexity":                   ["error", 7],
+    "max-nested-callbacks":         ["error", 3],
+    "space-infix-ops":              "error",
+    "object-property-newline":      "error",
+    "no-negated-condition":         "error",
+    "no-multi-assign":              "error",
+    "block-scoped-var":             "error",
+    "no-lonely-if":                 "error",
+    "no-invalid-this":              "error",
+    "one-var-declaration-per-line": "error",
+    "no-empty-function":            "error",
+    "no-nested-ternary":            "error",
+    "no-cond-assign":               "error",
+    "consistent-return":            "error",
+    "no-inline-comments":           "warn",
+    "yoda":                         "warn",
+    "no-console":                   "warn",
+    "space-unary-ops":              "warn",
+    "no-unused-vars":               "warn",
+    "eol-last":                     "warn"
+  },
+  "globals": {
+    // solutiondrive
+    "SD_SHOP_BASE_URL": true,
+    "SD_COOKIE_PATH": true,
+
+    // libs
+    "WebFont": true,
+
+    // oxid variables
+    "oxInputValidator": true,
+    "oxAjax": true,
+    "oxAGBCheck": true,
+    "oxAmountPriceSelect": true,
+    "oxZoomPictures": true,
+    "oxUserShipingAddressSelect": true,
+    "oxTsBadge": true,
+    "oxTopMenu": true,
+    "oxTag": true,
+    "oxSlider": true,
+    "oxReview": true,
+    "oxRating": true,
+    "oxPayment": true,
+    "oxMorePictures": true,
+    "oxModalPopup": true,
+    "oxMiniBasket": true,
+    "oxManufacturerSlider": true,
+    "oxLoginBox": true,
+    "oxListRemoveButton": true,
+    "oxInnerLabel": true,
+    "oxInfoPopup": true,
+    "oxFlyOutBox": true,
+    "oxFacebook": true,
+    "oxEqualizer": true,
+    "oxEnterPassword": true,
+    "oxDropDown": true,
+    "oxCountryStateSelect": true,
+    "oxCookieNote": true,
+    "oxCompareLinks": true,
+    "oxCompare": true,
+    "oxCenterElementOnHover": true,
+    "oxBlockDebug": true,
+    "oxBetaNote": true,
+    "oxBasketChecks": true,
+    "oxArticleVariant": true,
+    "oxArticleBox": true,
+    "oxArticleActionLinksSelect": true
+  },
+  "env": {
+    "jquery": true,
+    "browser": true
+  }
+}
