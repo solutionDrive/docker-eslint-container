@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+if [[ -z "${PLUGIN_PATH}" ]]; then
+    echo "ERROR: path is missing";
+    exit 1;
+fi
+
+# enter der workdir
+cd $PLUGIN_BASE_WORKDIR
+
+# add ignore if it is set
+if [[ ! -z "${PLUGIN_IGNORE}" ]]; then
+    PLUGIN_CLI="${PLUGIN_CLI} --ignore-path ${PLUGIN_IGNORE}"
+fi
+
+if [[ "${PLUGIN_QUIET}" == true ]]; then
+    PLUGIN_CLI="${PLUGIN_CLI} --quiet"
+fi
+
+
+# show the command we use
+set -x
+
+#execute command
+eslint ${PLUGIN_CLI}
