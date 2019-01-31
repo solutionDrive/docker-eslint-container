@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-docker build .
+docker build \
+    -t solutiondrive/eslint:latest \
+    .
