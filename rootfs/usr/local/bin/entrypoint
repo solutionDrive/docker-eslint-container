@@ -2,7 +2,7 @@
 
 for FILE in /etc/entrypoint.d/*.sh
 do
-  source ${FILE}
+  source ${FILE};
 done
 
-exec $@
+exec $@;
